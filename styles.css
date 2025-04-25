@@ -12,6 +12,7 @@
   font-family: Arial, Helvetica, sans-serif; /* Font style */
   letter-spacing: 0.2px; /* Slight spacing between letters */
   color: rgb(57, 57, 57); /* Text color */
+  background-color: white;
 }
 
 /* Body and Background Styling */
@@ -30,7 +31,7 @@ h1 {
   font-weight: 600; /* Bold font */
   font-size: 40px; /* Font size for h1 */
   font-family: 'Young Serif'; /* Custom font */
-  line-height: 40px; /* Line height for spacing */
+  line-height: 20px; /* Line height for spacing */
 }
 
 h2, h3 {
@@ -79,10 +80,11 @@ ol li::marker {
 
 /* List Styling for UL and OL */
 ul, ol {
-  padding-left: 5px; /* Padding on the left side */
-  margin-left: 0; /* No margin on the left */
-  list-style-position: inside; /* Keep the bullet/number aligned with the text */
-}
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: outside;
+  }
+  
 
 ul li, ol li {
   line-height: 1.8; /* Adjust line height for better readability */
@@ -109,6 +111,13 @@ table tr:last-child td {
   border-bottom: none; /* Remove bottom border from the last row */
 }
 
+/* Make numbers (e.g., in the second column) red */
+table td:nth-child(2) {
+    color: #824832; /* You can replace this with any shade of red you like */
+    font-weight: bold;
+  }
+  
+
 /* Custom Marker Color for List Items */
 ul li::marker {
   color: #824832; /* Custom color for list item markers */
@@ -121,11 +130,12 @@ ul li::marker {
       padding: 48px;
       font-size: 16px;
       line-height: 24px;
+      background-color: white;
     }
   
     h1 {
       font-size: 48px;
-      line-height: 52px;
+      line-height: 40px;
     }
   
     h2 {
