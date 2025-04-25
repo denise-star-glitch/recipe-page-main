@@ -1,116 +1,152 @@
 /* General Container Styles */
 .container {
-    padding: 36px; /* Adjust padding around the container */
-    border-radius: 24px; /* Rounded corners */
-    width: 90%; /* Set the width relative to its parent */
-    max-width: 660px; /* Maximum width */
-    line-height: 20px; /* Line height for readability */
-    margin: 0 auto; /* Center the container horizontally */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Align children to the center */
-    font-family: Arial, Helvetica, sans-serif; /* Font style */
-    letter-spacing: 0.2px; /* Slight spacing between letters */
-    color: rgb(57, 57, 57); /* Text color */
-  }
+  padding: 36px; /* Adjust padding around the container */
+  border-radius: 24px; /* Rounded corners */
+  width: 90%; /* Set the width relative to its parent */
+  max-width: 660px; /* Maximum width */
+  line-height: 20px; /* Line height for readability */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Align children to the center */
+  font-family: Arial, Helvetica, sans-serif; /* Font style */
+  letter-spacing: 0.2px; /* Slight spacing between letters */
+  color: rgb(57, 57, 57); /* Text color */
+}
+
+/* Body and Background Styling */
+body {
+  background-color: #F3E5D8; /* Light beige background color */
+}
+
+/* Image Styling */
+.image-omelette {
+  width: 100%; /* Image takes full width */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Heading Styling */
+h1 {
+  font-weight: 600; /* Bold font */
+  font-size: 40px; /* Font size for h1 */
+  font-family: 'Young Serif'; /* Custom font */
+  line-height: 40px; /* Line height for spacing */
+}
+
+h2, h3 {
+  color: #824832; /* Color for h2 and h3 */
+}
+
+h2 {
+  font-weight: 600; /* Bold font */
+  font-size: 28px; /* Font size for h2 */
+  font-family: 'Young Serif'; /* Custom font */
+  line-height: 40px; /* Line height for spacing */
+}
+
+h3 {
+  font-weight: 600; /* Bold font */
+  font-size: 24px; /* Font size for h3 */
+  font-family: 'Young Serif'; /* Custom font */
+  line-height: 40px; /* Line height for spacing */
+}
+
+/* List Item Marker Styling */
+ol li::marker {
+  font-weight: bold; /* Bold markers */
+  color: #824832; /* Custom color for markers */
+}
+
+/* Prep Time Section Styling */
+.prep-time {
+  background-color: #FFF7FC; /* Light pink background */
+  padding: 10px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  padding-left: 30px; /* Extra padding on the left side */
+}
+
+/* Instructions and Ingredients Styling */
+.instructions {
+  border-top: 1px solid #e6e6e6; /* Light gray border */
+  padding-top: 20px; /* Padding at the top */
+  padding-bottom: 20px; /* Padding at the bottom */
+}
+
+.ingredients {
+  padding-top: 20px; /* Padding at the top */
+  padding-bottom: 20px; /* Padding at the bottom */
+}
+
+/* List Styling for UL and OL */
+ul, ol {
+  padding-left: 5px; /* Padding on the left side */
+  margin-left: 0; /* No margin on the left */
+  list-style-position: inside; /* Keep the bullet/number aligned with the text */
+}
+
+ul li, ol li {
+  line-height: 1.8; /* Adjust line height for better readability */
+}
+
+/* Nutrition Section Styling */
+.Nutrition {
+  border-top: 1px solid #e6e6e6; /* Light gray border */
+  padding-top: 20px; /* Padding at the top */
+}
+
+/* Table Styling */
+table {
+  width: 100%; /* Table takes up full width */
+  border-collapse: collapse; /* Collapse borders between table cells */
+}
+
+table td {
+  padding: 12px 16px; /* Padding inside table cells */
+  border-bottom: 1px solid #ddd; /* Light gray border under each row */
+}
+
+table tr:last-child td {
+  border-bottom: none; /* Remove bottom border from the last row */
+}
+
+/* Custom Marker Color for List Items */
+ul li::marker {
+  color: #824832; /* Custom color for list item markers */
+}
+/* MOBILE-FIRST STYLES ARE ALREADY IN PLACE ABOVE */
+
+/* 🌐 DESKTOP STYLES - Screens 768px and up */
+@media (min-width: 768px) {
+    .container {
+      padding: 48px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   
-  /* Body and Background Styling */
-  body {
-    background-color: #F3E5D8; /* Light beige background color */
-  }
+    h1 {
+      font-size: 48px;
+      line-height: 52px;
+    }
   
-  /* Image Styling */
-  .image-omelette {
-    width: 100%; /* Image takes full width */
-    border-radius: 10px; /* Rounded corners for the image */
-  }
+    h2 {
+      font-size: 32px;
+    }
   
-  /* Heading Styling */
-  h1 {
-    font-weight: 600; /* Bold font */
-    font-size: 40px; /* Font size for h1 */
-    font-family: 'Young Serif'; /* Custom font */
-    line-height: 40px; /* Line height for spacing */
-  }
+    h3 {
+      font-size: 28px;
+    }
   
-  h2, h3 {
-    color: #824832; /* Color for h2 and h3 */
-  }
+    ul, ol {
+      padding-left: 20px;
+    }
   
-  h2 {
-    font-weight: 600; /* Bold font */
-    font-size: 28px; /* Font size for h2 */
-    font-family: 'Young Serif'; /* Custom font */
-    line-height: 40px; /* Line height for spacing */
-  }
+    table td {
+      padding: 16px 24px;
+    }
   
-  h3 {
-    font-weight: 600; /* Bold font */
-    font-size: 24px; /* Font size for h3 */
-    font-family: 'Young Serif'; /* Custom font */
-    line-height: 40px; /* Line height for spacing */
-  }
-  
-  /* List Item Marker Styling */
-  ol li::marker {
-    font-weight: bold; /* Bold markers */
-    color: #824832; /* Custom color for markers */
-  }
-  
-  /* Prep Time Section Styling */
-  .prep-time {
-    background-color: #FFF7FC; /* Light pink background */
-    padding: 10px; /* Padding around the section */
-    border-radius: 10px; /* Rounded corners */
-    padding-left: 30px; /* Extra padding on the left side */
-  }
-  
-  /* Instructions and Ingredients Styling */
-  .instructions {
-    border-top: 1px solid #e6e6e6; /* Light gray border */
-    padding-top: 20px; /* Padding at the top */
-    padding-bottom: 20px; /* Padding at the bottom */
-  }
-  
-  .ingredients {
-    padding-top: 20px; /* Padding at the top */
-    padding-bottom: 20px; /* Padding at the bottom */
-  }
-  
-  /* List Styling for UL and OL */
-  ul, ol {
-    padding-left: 5px; /* Padding on the left side */
-    margin-left: 0; /* No margin on the left */
-    list-style-position: inside; /* Keep the bullet/number aligned with the text */
-  }
-  
-  ul li, ol li {
-    line-height: 1.8; /* Adjust line height for better readability */
-  }
-  
-  /* Nutrition Section Styling */
-  .Nutrition {
-    border-top: 1px solid #e6e6e6; /* Light gray border */
-    padding-top: 20px; /* Padding at the top */
-  }
-  
-  /* Table Styling */
-  table {
-    width: 100%; /* Table takes up full width */
-    border-collapse: collapse; /* Collapse borders between table cells */
-  }
-  
-  table td {
-    padding: 12px 16px; /* Padding inside table cells */
-    border-bottom: 1px solid #ddd; /* Light gray border under each row */
-  }
-  
-  table tr:last-child td {
-    border-bottom: none; /* Remove bottom border from the last row */
-  }
-  
-  /* Custom Marker Color for List Items */
-  ul li::marker {
-    color: #824832; /* Custom color for list item markers */
+    .prep-time, .instructions, .ingredients, .Nutrition {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   
